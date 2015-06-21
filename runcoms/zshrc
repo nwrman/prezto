@@ -11,16 +11,3 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-
-# Detect if we have homeshick and enable it's completions
-if [ -f $HOME/.homesick/repos/homeshick/homeshick.sh ]
-then
-  source "$HOME/.homesick/repos/homeshick/homeshick.sh"
-  fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
-fi
-
-# Load common config if exists
-if [ -f $HOME/.commonrc ]
-then
-  source "$HOME/.commonrc"
-fi
